@@ -1,5 +1,5 @@
-require './lib/team'
 require './lib/player'
+require './lib/team'
 
 RSpec.describe Team do
   
@@ -39,6 +39,7 @@ RSpec.describe Team do
       team = Team.new("France")
       mbappe = Player.new({name: "Kylian Mbappe", position: "forward"})
       pogba = Player.new({name: "Paul Pogba", position: "midfielder"})
+
       team.add_player(mbappe)
       team.add_player(pogba)
 
